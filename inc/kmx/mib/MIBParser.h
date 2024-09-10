@@ -17,70 +17,70 @@ public:
     LEFT_BRACKET = 6, LEFT_PAREN = 7, LESS_THAN = 8, MINUS = 9, RIGHT_BRACE = 10, 
     RIGHT_BRACKET = 11, RIGHT_PAREN = 12, SEMI_COLON = 13, TRIPLE_DOT = 14, 
     VERTICAL_BAR = 15, ABSENT = 16, ACCESSIBLE_FOR_NOTIFY = 17, ACCESS = 18, 
-    AGENT_CAPABILITIES = 19, ANY = 20, APPLICATION = 21, BEGIN = 22, BIT = 23, 
-    BITS = 24, BOOLEAN = 25, BY = 26, CHOICE = 27, COMPONENT = 28, COMPONENTS = 29, 
-    CONTACT_INFO = 30, DEFAULT = 31, DEFINED = 32, DEFINITIONS = 33, DEFVAL = 34, 
-    DESCRIPTION = 35, DISPLAY_HINT = 36, END = 37, ENTERPRISE = 38, ENUMERATED = 39, 
-    EXPLICIT = 40, EXPORTS = 41, FALSE = 42, FROM = 43, GROUP = 44, IDENTIFIER = 45, 
-    IMPLICIT = 46, IMPORTS = 47, INCLUDES = 48, INDEX = 49, INTEGER = 50, 
-    LAST_UPDATED = 51, MANDATORY_GROUPS = 52, MACRO = 53, MAX = 54, MAX_ACCESS = 55, 
-    MIN = 56, MINUS_INFINITY = 57, MODULE = 58, MODULES = 59, MODULE_COMPLIANCE = 60, 
-    MODULE_IDENTITY = 61, NOT_ACCESSIBLE = 62, NOTIFICATION_GROUP = 63, 
-    NOTIFICATION_TYPE = 64, NOTIFICATIONS = 65, NULL_ = 66, OBJECT = 67, 
-    OBJECT_GROUP = 68, OBJECT_IDENTITY = 69, OBJECT_TYPE = 70, OBJECTS = 71, 
-    OCTET = 72, OF = 73, OPTIONAL = 74, ORGANIZATION = 75, PLUS_INFINITY = 76, 
-    PRESENT = 77, PRIVATE = 78, PRODUCT_RELEASE = 79, READ_CREATE = 80, 
-    READ_ONLY = 81, READ_WRITE = 82, REAL = 83, REFERENCE = 84, REVISION = 85, 
-    SEQUENCE = 86, SET = 87, SIZE = 88, STATUS = 89, STRING = 90, SUPPORTS = 91, 
-    SYNTAX = 92, TAGS = 93, TEXTUAL_CONVENTION = 94, TRAP_TYPE = 95, TRUE = 96, 
-    UNITS = 97, UNIVERSAL = 98, VARIABLES = 99, VARIATION = 100, WITH = 101, 
-    WRITE_SYNTAX = 102, BINARY_STRING = 103, HEXADECIMAL_STRING = 104, QUOTED_STRING = 105, 
-    IDENTIFIER_STRING = 106, INTEGER_STRING = 107, NUMBER_STRING = 108, 
-    WHITESPACE = 109, COMMENT = 110
+    AGENT_CAPABILITIES = 19, ANY = 20, APPLICATION = 21, AUGMENTS = 22, 
+    BEGIN = 23, BIT = 24, BITS = 25, BOOLEAN = 26, BY = 27, CHOICE = 28, 
+    COMPONENT = 29, COMPONENTS = 30, CONTACT_INFO = 31, DEFAULT = 32, DEFINED = 33, 
+    DEFINITIONS = 34, DEFVAL = 35, DESCRIPTION = 36, DISPLAY_HINT = 37, 
+    END = 38, ENTERPRISE = 39, ENUMERATED = 40, EXPLICIT = 41, EXPORTS = 42, 
+    FALSE = 43, FROM = 44, GROUP = 45, IDENTIFIER = 46, IMPLICIT = 47, IMPORTS = 48, 
+    INCLUDES = 49, INDEX = 50, INTEGER = 51, LAST_UPDATED = 52, MANDATORY_GROUPS = 53, 
+    MACRO = 54, MAX = 55, MAX_ACCESS = 56, MIN = 57, MINUS_INFINITY = 58, 
+    MODULE = 59, MODULES = 60, MODULE_COMPLIANCE = 61, MODULE_IDENTITY = 62, 
+    NOT_ACCESSIBLE = 63, NOTIFICATION_GROUP = 64, NOTIFICATION_TYPE = 65, 
+    NOTIFICATIONS = 66, NULL_ = 67, OBJECT = 68, OBJECT_GROUP = 69, OBJECT_IDENTITY = 70, 
+    OBJECT_TYPE = 71, OBJECTS = 72, OCTET = 73, OF = 74, OPTIONAL = 75, 
+    ORGANIZATION = 76, PLUS_INFINITY = 77, PRESENT = 78, PRIVATE = 79, PRODUCT_RELEASE = 80, 
+    READ_CREATE = 81, READ_ONLY = 82, READ_WRITE = 83, REAL = 84, REFERENCE = 85, 
+    REVISION = 86, SEQUENCE = 87, SET = 88, SIZE = 89, STATUS = 90, STRING = 91, 
+    SUPPORTS = 92, SYNTAX = 93, TAGS = 94, TEXTUAL_CONVENTION = 95, TRAP_TYPE = 96, 
+    TRUE = 97, UNITS = 98, UNIVERSAL = 99, VARIABLES = 100, VARIATION = 101, 
+    WITH = 102, WRITE_SYNTAX = 103, BINARY_STRING = 104, HEXADECIMAL_STRING = 105, 
+    QUOTED_STRING = 106, IDENTIFIER_STRING = 107, INTEGER_STRING = 108, 
+    NUMBER_STRING = 109, WHITESPACE = 110, COMMENT = 111
   };
 
   enum {
     RuleData = 0, RuleModuleDefinition = 1, RuleModuleIdentifier = 2, RuleModuleReference = 3, 
     RuleTagDefault = 4, RuleModuleBody = 5, RuleExportList = 6, RuleImportList = 7, 
-    RuleSymbolsFromModule = 8, RuleSymbolList = 9, RuleSymbolListBraced = 10, 
-    RuleSymbol = 11, RuleAssignmentList = 12, RuleAssignment = 13, RuleMacroDefinition = 14, 
-    RuleMacroReference = 15, RuleMacroBody = 16, RuleMacroBodyElement = 17, 
-    RuleTypeAssignment = 18, RuleType = 19, RuleDefinedType = 20, RuleBuiltinType = 21, 
-    RuleNullType = 22, RuleBooleanType = 23, RuleRealType = 24, RuleAccessLevel = 25, 
-    RuleIntegerType = 26, RuleObjectIdentifierType = 27, RuleStringType = 28, 
-    RuleBitStringType = 29, RuleBitsType = 30, RuleSequenceContent = 31, 
-    RuleSequenceType = 32, RuleSequenceOfType = 33, RuleSetType = 34, RuleSetOfType = 35, 
-    RuleChoiceType = 36, RuleEnumeratedType = 37, RuleSelectionType = 38, 
-    RuleTaggedType = 39, RuleTag = 40, RuleClass_ = 41, RuleExplicitOrImplicitTag = 42, 
-    RuleAnyType = 43, RuleElementTypeList = 44, RuleElementType = 45, RuleOptionalOrDefaultElement = 46, 
-    RuleValueOrConstraintList = 47, RuleNamedNumberList = 48, RuleNamedNumber = 49, 
-    RuleNumber = 50, RuleConstraintList = 51, RuleConstraint = 52, RuleValueConstraintList = 53, 
-    RuleValueConstraint = 54, RuleValueRange = 55, RuleLowerEndPoint = 56, 
-    RuleUpperEndPoint = 57, RuleSizeConstraint = 58, RuleAlphabetConstraint = 59, 
-    RuleContainedTypeConstraint = 60, RuleInnerTypeConstraint = 61, RuleComponentsList = 62, 
-    RuleComponentsListTail = 63, RuleComponentConstraint = 64, RuleComponentValuePresence = 65, 
-    RuleComponentPresence = 66, RuleValueAssignment = 67, RuleValue = 68, 
-    RuleDefinedValue = 69, RuleBuiltinValue = 70, RuleNullValue = 71, RuleBooleanValue = 72, 
-    RuleSpecialRealValue = 73, RuleNumberValue = 74, RuleBinaryValue = 75, 
-    RuleHexadecimalValue = 76, RuleStringValue = 77, RuleBitOrObjectIdentifierValue = 78, 
-    RuleBitValue = 79, RuleObjectIdentifierValue = 80, RuleNameValueList = 81, 
-    RuleNameValueComponent = 82, RuleNameOrNumber = 83, RuleNameAndNumber = 84, 
-    RuleDefinedMacroType = 85, RuleDefinedMacroName = 86, RuleSnmpStatusDescrReferPart = 87, 
-    RuleSnmpObjectStatusDescrReferPart = 88, RuleSnmpModuleIdentityMacroType = 89, 
-    RuleSnmpObjectIdentityMacroType = 90, RuleSnmpObjectTypeMacroType = 91, 
-    RuleSnmpNotificationTypeMacroType = 92, RuleSnmpTrapTypeMacroType = 93, 
-    RuleSnmpTextualConventionMacroType = 94, RuleSnmpObjectGroupMacroType = 95, 
-    RuleSnmpNotificationGroupMacroType = 96, RuleSnmpModuleComplianceMacroType = 97, 
-    RuleSnmpAgentCapabilitiesMacroType = 98, RuleSnmpSupportPart = 99, RuleSnmpInclusionPart = 100, 
-    RuleSnmpVariationPart = 101, RuleSnmpGroupPart = 102, RuleSnmpAccessPart = 103, 
-    RuleSnmpContactPart = 104, RuleSnmpDefValPart = 105, RuleSnmpDescrPart = 106, 
-    RuleSnmpDisplayPart = 107, RuleSnmpEnterprisePart = 108, RuleSnmpIndexPart = 109, 
-    RuleSnmpMaxAccessPart = 110, RuleSnmpMandatoryGroupsPart = 111, RuleSnmpMibGroupsPart = 112, 
-    RuleSnmpMibCompliancePart = 113, RuleSnmpModulesPart = 114, RuleSnmpNotificationPart = 115, 
-    RuleSnmpObjectsPart = 116, RuleSnmpOrganizationPart = 117, RuleSnmpProductPart = 118, 
-    RuleSnmpReferPart = 119, RuleSnmpRevisionPart = 120, RuleSnmpStatusPart = 121, 
-    RuleSnmpSyntaxPart = 122, RuleSnmpUnitsPart = 123, RuleSnmpUpdatePart = 124, 
-    RuleSnmpVarPart = 125, RuleSnmpWritePart = 126
+    RuleSymbolsFromModule = 8, RuleSymbolList = 9, RuleSymbol = 10, RuleAssignmentList = 11, 
+    RuleAssignment = 12, RuleMacroDefinition = 13, RuleMacroReference = 14, 
+    RuleMacroBody = 15, RuleMacroBodyElement = 16, RuleTypeAssignment = 17, 
+    RuleType = 18, RuleDefinedType = 19, RuleBuiltinType = 20, RuleNullType = 21, 
+    RuleBooleanType = 22, RuleRealType = 23, RuleAccessLevel = 24, RuleIntegerType = 25, 
+    RuleObjectIdentifierType = 26, RuleStringType = 27, RuleBitStringType = 28, 
+    RuleBitsType = 29, RuleSequenceContent = 30, RuleSequenceType = 31, 
+    RuleSequenceOfType = 32, RuleSetType = 33, RuleSetOfType = 34, RuleChoiceType = 35, 
+    RuleEnumeratedType = 36, RuleSelectionType = 37, RuleTaggedType = 38, 
+    RuleTag = 39, RuleClass_ = 40, RuleExplicitOrImplicitTag = 41, RuleAnyType = 42, 
+    RuleElementTypeList = 43, RuleElementType = 44, RuleOptionalOrDefaultElement = 45, 
+    RuleValueOrConstraintList = 46, RuleNamedNumberList = 47, RuleNamedNumber = 48, 
+    RuleNumber = 49, RuleConstraintList = 50, RuleConstraint = 51, RuleValueConstraintList = 52, 
+    RuleValueConstraint = 53, RuleValueRange = 54, RuleLowerEndPoint = 55, 
+    RuleUpperEndPoint = 56, RuleSizeConstraint = 57, RuleAlphabetConstraint = 58, 
+    RuleContainedTypeConstraint = 59, RuleInnerTypeConstraint = 60, RuleComponentsList = 61, 
+    RuleComponentsListTail = 62, RuleComponentConstraint = 63, RuleComponentValuePresence = 64, 
+    RuleComponentPresence = 65, RuleValueAssignment = 66, RuleValue = 67, 
+    RuleDefinedValue = 68, RuleBuiltinValue = 69, RuleNullValue = 70, RuleBooleanValue = 71, 
+    RuleSpecialRealValue = 72, RuleNumberValue = 73, RuleBinaryValue = 74, 
+    RuleHexadecimalValue = 75, RuleStringValue = 76, RuleBitOrObjectIdentifierValue = 77, 
+    RuleBitValue = 78, RuleObjectIdentifierValue = 79, RuleNameValueList = 80, 
+    RuleNameValueComponent = 81, RuleNameOrNumber = 82, RuleNameAndNumber = 83, 
+    RuleDefinedMacroType = 84, RuleDefinedMacroName = 85, RuleSnmpStatusDescrReferPart = 86, 
+    RuleSnmpModuleIdentityMacroType = 87, RuleSnmpObjectIdentityMacroType = 88, 
+    RuleSnmpObjectTypeMacroType = 89, RuleSnmpNotificationTypeMacroType = 90, 
+    RuleSnmpTrapTypeMacroType = 91, RuleSnmpTextualConventionMacroType = 92, 
+    RuleSnmpObjectGroupMacroType = 93, RuleSnmpNotificationGroupMacroType = 94, 
+    RuleSnmpModuleComplianceMacroType = 95, RuleSnmpAgentCapabilitiesMacroType = 96, 
+    RuleSnmpSupportPart = 97, RuleSnmpInclusionPart = 98, RuleSnmpVariationPart = 99, 
+    RuleSnmpGroupPart = 100, RuleSnmpAccessPart = 101, RuleSnmpAugmentsPart = 102, 
+    RuleSnmpContactPart = 103, RuleSnmpDefValPart = 104, RuleSnmpDescrPart = 105, 
+    RuleSnmpDisplayPart = 106, RuleSnmpEnterprisePart = 107, RuleSnmpIndexPart = 108, 
+    RuleSnmpMaxAccessPart = 109, RuleSnmpMandatoryGroupsPart = 110, RuleSnmpMibGroupsPart = 111, 
+    RuleSnmpMibCompliancePart = 112, RuleSnmpModulesPart = 113, RuleSnmpNotificationPart = 114, 
+    RuleSnmpObjectsPart = 115, RuleSnmpOrganizationPart = 116, RuleSnmpProductPart = 117, 
+    RuleSnmpReferPart = 118, RuleSnmpRevisionPart = 119, RuleSnmpStatusPart = 120, 
+    RuleSnmpSyntaxPart = 121, RuleSnmpUnitsPart = 122, RuleSnmpUpdatePart = 123, 
+    RuleSnmpVarPart = 124, RuleSnmpWritePart = 125
   };
 
   explicit MIBParser(antlr4::TokenStream *input);
@@ -110,7 +110,6 @@ public:
   class ImportListContext;
   class SymbolsFromModuleContext;
   class SymbolListContext;
-  class SymbolListBracedContext;
   class SymbolContext;
   class AssignmentListContext;
   class AssignmentContext;
@@ -188,7 +187,6 @@ public:
   class DefinedMacroTypeContext;
   class DefinedMacroNameContext;
   class SnmpStatusDescrReferPartContext;
-  class SnmpObjectStatusDescrReferPartContext;
   class SnmpModuleIdentityMacroTypeContext;
   class SnmpObjectIdentityMacroTypeContext;
   class SnmpObjectTypeMacroTypeContext;
@@ -204,6 +202,7 @@ public:
   class SnmpVariationPartContext;
   class SnmpGroupPartContext;
   class SnmpAccessPartContext;
+  class SnmpAugmentsPartContext;
   class SnmpContactPartContext;
   class SnmpDefValPartContext;
   class SnmpDescrPartContext;
@@ -379,21 +378,6 @@ public:
   };
 
   SymbolListContext* symbolList();
-
-  class  SymbolListBracedContext : public antlr4::ParserRuleContext {
-  public:
-    SymbolListBracedContext(antlr4::ParserRuleContext *parent, size_t invokingState);
-    virtual size_t getRuleIndex() const override;
-    antlr4::tree::TerminalNode *LEFT_BRACE();
-    SymbolListContext *symbolList();
-    antlr4::tree::TerminalNode *RIGHT_BRACE();
-
-    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
-    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
-   
-  };
-
-  SymbolListBracedContext* symbolListBraced();
 
   class  SymbolContext : public antlr4::ParserRuleContext {
   public:
@@ -1593,20 +1577,6 @@ public:
 
   SnmpStatusDescrReferPartContext* snmpStatusDescrReferPart();
 
-  class  SnmpObjectStatusDescrReferPartContext : public antlr4::ParserRuleContext {
-  public:
-    SnmpObjectStatusDescrReferPartContext(antlr4::ParserRuleContext *parent, size_t invokingState);
-    virtual size_t getRuleIndex() const override;
-    SnmpObjectsPartContext *snmpObjectsPart();
-    SnmpStatusDescrReferPartContext *snmpStatusDescrReferPart();
-
-    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
-    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
-   
-  };
-
-  SnmpObjectStatusDescrReferPartContext* snmpObjectStatusDescrReferPart();
-
   class  SnmpModuleIdentityMacroTypeContext : public antlr4::ParserRuleContext {
   public:
     SnmpModuleIdentityMacroTypeContext(antlr4::ParserRuleContext *parent, size_t invokingState);
@@ -1647,11 +1617,11 @@ public:
     antlr4::tree::TerminalNode *OBJECT_TYPE();
     SnmpSyntaxPartContext *snmpSyntaxPart();
     SnmpMaxAccessPartContext *snmpMaxAccessPart();
-    SnmpStatusPartContext *snmpStatusPart();
-    SnmpDescrPartContext *snmpDescrPart();
+    SnmpStatusDescrReferPartContext *snmpStatusDescrReferPart();
     SnmpUnitsPartContext *snmpUnitsPart();
     SnmpAccessPartContext *snmpAccessPart();
     SnmpIndexPartContext *snmpIndexPart();
+    SnmpAugmentsPartContext *snmpAugmentsPart();
     SnmpDefValPartContext *snmpDefValPart();
 
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
@@ -1666,7 +1636,8 @@ public:
     SnmpNotificationTypeMacroTypeContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *NOTIFICATION_TYPE();
-    SnmpObjectStatusDescrReferPartContext *snmpObjectStatusDescrReferPart();
+    SnmpStatusDescrReferPartContext *snmpStatusDescrReferPart();
+    SnmpObjectsPartContext *snmpObjectsPart();
 
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
@@ -1699,6 +1670,7 @@ public:
     antlr4::tree::TerminalNode *TEXTUAL_CONVENTION();
     SnmpStatusDescrReferPartContext *snmpStatusDescrReferPart();
     SnmpSyntaxPartContext *snmpSyntaxPart();
+    SnmpDisplayPartContext *snmpDisplayPart();
 
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
@@ -1712,7 +1684,8 @@ public:
     SnmpObjectGroupMacroTypeContext(antlr4::ParserRuleContext *parent, size_t invokingState);
     virtual size_t getRuleIndex() const override;
     antlr4::tree::TerminalNode *OBJECT_GROUP();
-    SnmpObjectStatusDescrReferPartContext *snmpObjectStatusDescrReferPart();
+    SnmpObjectsPartContext *snmpObjectsPart();
+    SnmpStatusDescrReferPartContext *snmpStatusDescrReferPart();
 
     virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
     virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
@@ -1852,6 +1825,22 @@ public:
   };
 
   SnmpAccessPartContext* snmpAccessPart();
+
+  class  SnmpAugmentsPartContext : public antlr4::ParserRuleContext {
+  public:
+    SnmpAugmentsPartContext(antlr4::ParserRuleContext *parent, size_t invokingState);
+    virtual size_t getRuleIndex() const override;
+    antlr4::tree::TerminalNode *AUGMENTS();
+    antlr4::tree::TerminalNode *LEFT_BRACE();
+    SymbolListContext *symbolList();
+    antlr4::tree::TerminalNode *RIGHT_BRACE();
+
+    virtual void enterRule(antlr4::tree::ParseTreeListener *listener) override;
+    virtual void exitRule(antlr4::tree::ParseTreeListener *listener) override;
+   
+  };
+
+  SnmpAugmentsPartContext* snmpAugmentsPart();
 
   class  SnmpContactPartContext : public antlr4::ParserRuleContext {
   public:

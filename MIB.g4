@@ -27,6 +27,7 @@ ACCESS               : 'ACCESS';
 AGENT_CAPABILITIES   : 'AGENT-CAPABILITIES';
 ANY                  : 'ANY';
 APPLICATION          : 'APPLICATION';
+AUGMENTS             : 'AUGMENTS';
 BEGIN                : 'BEGIN';
 BIT                  : 'BIT';
 BITS                 : 'BITS';
@@ -132,7 +133,6 @@ exportList : EXPORTS symbolList? SEMI_COLON ;
 importList : IMPORTS symbolsFromModule* SEMI_COLON ;
 symbolsFromModule : symbolList FROM moduleIdentifier ;
 symbolList : symbol (COMMA symbol)* ;
-symbolListBraced : LEFT_BRACE symbolList RIGHT_BRACE ;
 symbol : IDENTIFIER_STRING | definedMacroName ;
 assignmentList : assignment+ ;
 assignment : (macroDefinition | typeAssignment | valueAssignment) SEMI_COLON? ;
@@ -218,15 +218,14 @@ definedMacroType : snmpModuleIdentityMacroType | snmpObjectIdentityMacroType | s
                  | snmpModuleComplianceMacroType | snmpAgentCapabilitiesMacroType ;
 definedMacroName : MODULE_IDENTITY | OBJECT_IDENTITY | OBJECT_TYPE | NOTIFICATION_TYPE | TRAP_TYPE | TEXTUAL_CONVENTION | OBJECT_GROUP | NOTIFICATION_GROUP
                  | MODULE_COMPLIANCE | AGENT_CAPABILITIES ;
-snmpStatusDescrReferPart : snmpStatusPart snmpDescrPart snmpReferPart? ;
-snmpObjectStatusDescrReferPart : snmpObjectsPart snmpStatusDescrReferPart ;
+snmpStatusDescrReferPart : snmpStatusPart snmpDescrPart? snmpReferPart? ;
 snmpModuleIdentityMacroType : MODULE_IDENTITY snmpUpdatePart snmpOrganizationPart snmpContactPart snmpDescrPart snmpRevisionPart* ;
 snmpObjectIdentityMacroType : OBJECT_IDENTITY snmpStatusDescrReferPart ;
-snmpObjectTypeMacroType : OBJECT_TYPE snmpSyntaxPart snmpUnitsPart? snmpAccessPart? snmpMaxAccessPart snmpStatusPart snmpDescrPart snmpIndexPart? snmpDefValPart? ;
-snmpNotificationTypeMacroType : NOTIFICATION_TYPE snmpObjectStatusDescrReferPart ;
+snmpObjectTypeMacroType : OBJECT_TYPE snmpSyntaxPart snmpUnitsPart? snmpAccessPart? snmpMaxAccessPart snmpStatusDescrReferPart snmpIndexPart? snmpAugmentsPart? snmpDefValPart? ;
+snmpNotificationTypeMacroType : NOTIFICATION_TYPE snmpObjectsPart? snmpStatusDescrReferPart ;
 snmpTrapTypeMacroType : TRAP_TYPE snmpEnterprisePart snmpVarPart? snmpDescrPart snmpReferPart? ;
-snmpTextualConventionMacroType : TEXTUAL_CONVENTION snmpStatusDescrReferPart snmpSyntaxPart ;
-snmpObjectGroupMacroType : OBJECT_GROUP snmpObjectStatusDescrReferPart ;
+snmpTextualConventionMacroType : TEXTUAL_CONVENTION snmpDisplayPart? snmpStatusDescrReferPart snmpSyntaxPart ;
+snmpObjectGroupMacroType : OBJECT_GROUP snmpObjectsPart snmpStatusDescrReferPart ;
 snmpNotificationGroupMacroType : NOTIFICATION_GROUP snmpNotificationPart snmpSyntaxPart? snmpMaxAccessPart? snmpStatusPart snmpDescrPart ;
 snmpModuleComplianceMacroType : MODULE_COMPLIANCE snmpStatusDescrReferPart snmpGroupPart* ((MODULE snmpMandatoryGroupsPart) | snmpModulesPart) ;
 snmpAgentCapabilitiesMacroType : AGENT_CAPABILITIES snmpProductPart snmpStatusDescrReferPart snmpSupportPart* ;
@@ -237,6 +236,7 @@ snmpGroupPart : GROUP IDENTIFIER_STRING snmpDescrPart snmpReferPart? ;
 
 // Helper Syntax for Macros
 snmpAccessPart : ACCESS IDENTIFIER_STRING ;
+snmpAugmentsPart : AUGMENTS LEFT_BRACE symbolList RIGHT_BRACE ;
 snmpContactPart : CONTACT_INFO QUOTED_STRING ;
 snmpDefValPart : DEFVAL LEFT_BRACE value RIGHT_BRACE ;
 snmpDescrPart : DESCRIPTION QUOTED_STRING ;

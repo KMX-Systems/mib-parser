@@ -46,9 +46,6 @@ public:
   virtual void enterSymbolList(MIBParser::SymbolListContext *ctx) = 0;
   virtual void exitSymbolList(MIBParser::SymbolListContext *ctx) = 0;
 
-  virtual void enterSymbolListBraced(MIBParser::SymbolListBracedContext *ctx) = 0;
-  virtual void exitSymbolListBraced(MIBParser::SymbolListBracedContext *ctx) = 0;
-
   virtual void enterSymbol(MIBParser::SymbolContext *ctx) = 0;
   virtual void exitSymbol(MIBParser::SymbolContext *ctx) = 0;
 
@@ -280,9 +277,6 @@ public:
   virtual void enterSnmpStatusDescrReferPart(MIBParser::SnmpStatusDescrReferPartContext *ctx) = 0;
   virtual void exitSnmpStatusDescrReferPart(MIBParser::SnmpStatusDescrReferPartContext *ctx) = 0;
 
-  virtual void enterSnmpObjectStatusDescrReferPart(MIBParser::SnmpObjectStatusDescrReferPartContext *ctx) = 0;
-  virtual void exitSnmpObjectStatusDescrReferPart(MIBParser::SnmpObjectStatusDescrReferPartContext *ctx) = 0;
-
   virtual void enterSnmpModuleIdentityMacroType(MIBParser::SnmpModuleIdentityMacroTypeContext *ctx) = 0;
   virtual void exitSnmpModuleIdentityMacroType(MIBParser::SnmpModuleIdentityMacroTypeContext *ctx) = 0;
 
@@ -327,6 +321,9 @@ public:
 
   virtual void enterSnmpAccessPart(MIBParser::SnmpAccessPartContext *ctx) = 0;
   virtual void exitSnmpAccessPart(MIBParser::SnmpAccessPartContext *ctx) = 0;
+
+  virtual void enterSnmpAugmentsPart(MIBParser::SnmpAugmentsPartContext *ctx) = 0;
+  virtual void exitSnmpAugmentsPart(MIBParser::SnmpAugmentsPartContext *ctx) = 0;
 
   virtual void enterSnmpContactPart(MIBParser::SnmpContactPartContext *ctx) = 0;
   virtual void exitSnmpContactPart(MIBParser::SnmpContactPartContext *ctx) = 0;

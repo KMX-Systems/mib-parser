@@ -22,11 +22,12 @@ StaticLibrary {
     Group {
         name: "Source"
         files: [
-            "src/MIBBaseListener.cpp",
-            "src/MIBLexer.cpp",
-            "src/MIBListener.cpp",
-            "src/MIBParser.cpp",
+            "MIBBaseListener.cpp",
+            "MIBLexer.cpp",
+            "MIBListener.cpp",
+            "MIBParser.cpp",
         ]
+        prefix: "src/kmx/mib/"
         qbs.install: false
     }
 

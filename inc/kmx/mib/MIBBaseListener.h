@@ -48,9 +48,6 @@ public:
   virtual void enterSymbolList(MIBParser::SymbolListContext * /*ctx*/) override { }
   virtual void exitSymbolList(MIBParser::SymbolListContext * /*ctx*/) override { }
 
-  virtual void enterSymbolListBraced(MIBParser::SymbolListBracedContext * /*ctx*/) override { }
-  virtual void exitSymbolListBraced(MIBParser::SymbolListBracedContext * /*ctx*/) override { }
-
   virtual void enterSymbol(MIBParser::SymbolContext * /*ctx*/) override { }
   virtual void exitSymbol(MIBParser::SymbolContext * /*ctx*/) override { }
 
@@ -282,9 +279,6 @@ public:
   virtual void enterSnmpStatusDescrReferPart(MIBParser::SnmpStatusDescrReferPartContext * /*ctx*/) override { }
   virtual void exitSnmpStatusDescrReferPart(MIBParser::SnmpStatusDescrReferPartContext * /*ctx*/) override { }
 
-  virtual void enterSnmpObjectStatusDescrReferPart(MIBParser::SnmpObjectStatusDescrReferPartContext * /*ctx*/) override { }
-  virtual void exitSnmpObjectStatusDescrReferPart(MIBParser::SnmpObjectStatusDescrReferPartContext * /*ctx*/) override { }
-
   virtual void enterSnmpModuleIdentityMacroType(MIBParser::SnmpModuleIdentityMacroTypeContext * /*ctx*/) override { }
   virtual void exitSnmpModuleIdentityMacroType(MIBParser::SnmpModuleIdentityMacroTypeContext * /*ctx*/) override { }
 
@@ -329,6 +323,9 @@ public:
 
   virtual void enterSnmpAccessPart(MIBParser::SnmpAccessPartContext * /*ctx*/) override { }
   virtual void exitSnmpAccessPart(MIBParser::SnmpAccessPartContext * /*ctx*/) override { }
+
+  virtual void enterSnmpAugmentsPart(MIBParser::SnmpAugmentsPartContext * /*ctx*/) override { }
+  virtual void exitSnmpAugmentsPart(MIBParser::SnmpAugmentsPartContext * /*ctx*/) override { }
 
   virtual void enterSnmpContactPart(MIBParser::SnmpContactPartContext * /*ctx*/) override { }
   virtual void exitSnmpContactPart(MIBParser::SnmpContactPartContext * /*ctx*/) override { }
